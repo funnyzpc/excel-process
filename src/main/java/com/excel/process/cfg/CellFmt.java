@@ -35,13 +35,22 @@ public enum CellFmt {
     NUMERIC_03(CellBaseType.NUMERIC,"#,##0",null,CellType.NUMERIC),
     //数值千分位保留两位小数(含四舍五入)
     NUMERIC_04(CellBaseType.NUMERIC,"#,##0.00",null,CellType.NUMERIC),
+
+    /**
+     * 文本
+     */
+    TEXT_01(CellBaseType.TEXT,"General",null,CellType.STRING),
+
     /**
      * 常规
      */
     GENERAL_01(CellBaseType.GENERAL,"General",null,CellType.NUMERIC),
     GENERAL_02(CellBaseType.GENERAL,"General","%s 天",CellType.NUMERIC),
     GENERAL_03(CellBaseType.GENERAL,"General","%s 小时",CellType.NUMERIC),
-	YMD_DATE(CellBaseType.DATE,"yyyy/M/d","yyyy/M/d",CellType.NUMERIC);
+    /**
+     * 日期
+     */
+	DATE_01(CellBaseType.DATE,"yyyy/M/d","yyyy/M/d",CellType.NUMERIC);
 
     /**
      *  Excel基本类型

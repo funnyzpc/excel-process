@@ -10,12 +10,11 @@
 
     <name>excel-process</name>
     <description>Excel 处理</description>
-    　　<!--spring boot 版本 2.0.4-->
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.0.4.RELEASE</version>
-        <relativePath/>
+        <version>1.5.4.RELEASE</version>
+        <relativePath />
     </parent>
 
     <dependencies>

@@ -156,7 +156,7 @@ public class ExcelWriteUtil {
             ioe.printStackTrace();
             LOGGER.error("{}",ioe);
         }
-        LOGGER.info("\r\n===>生成导出文件：{}",fileObject.getPath());
+        LOGGER.info("\r\n===>已生成导出文件：{}",fileObject.getPath());
         return fileObject;
     }
 
@@ -233,6 +233,7 @@ public class ExcelWriteUtil {
             ioe.printStackTrace();
             LOGGER.error("{}",ioe);
         }
+        LOGGER.info("\r\n===>已生成导出文件：{}",fileObject.getPath());
         return fileObject;
     }
 

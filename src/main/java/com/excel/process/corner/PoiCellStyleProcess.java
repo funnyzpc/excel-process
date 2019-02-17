@@ -10,7 +10,6 @@ import java.util.stream.IntStream;
 
 /**
  * @author: funnyzpc
- * @date: 2018/12/22 15:38
  * @Description 单元格样式构造类
  **/
 public class PoiCellStyleProcess {
@@ -49,7 +48,7 @@ public class PoiCellStyleProcess {
         headerStyle.setFont(font);
         //背景色
         //headerStyle.setFillForegroundColor(IndexedColors.GREY_25_PERCENT.index);
-        headerStyle.setFillForegroundColor(IndexedColors.DARK_RED.index);
+        headerStyle.setFillForegroundColor(IndexedColors.DARK_BLUE.index);
         headerStyle.setFillPattern(FillPatternType.SOLID_FOREGROUND);
         //允许单元格内换行
         headerStyle.setWrapText(true);
@@ -57,7 +56,7 @@ public class PoiCellStyleProcess {
     }
 
     public static CellStyle[] bodyCellStyle(SXSSFWorkbook workbook, CellFmt[] cellFmts, CellStyle[] cellStyles){
-        LOGGER.info("\r\n==>开始创建表头样式~");
+        //LOGGER.info("\r\n==>开始创建表头样式~");
         CellStyle defaultStyle = bodyCellStyle(workbook,null);
         if(null == cellFmts || cellFmts.length==0){
             IntStream.range(0,cellStyles.length).parallel().forEach(i->cellStyles[i]=defaultStyle);

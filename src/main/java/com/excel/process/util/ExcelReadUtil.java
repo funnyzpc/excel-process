@@ -38,6 +38,12 @@ public class ExcelReadUtil {
         }
     }
 
+    /**
+     * 读取Excel并转换为Map数据（上传文件方式）
+     * @param multipartFile 上传文件
+     * @param colCount 读取最大列
+     * @return
+     */
     public static List<Map<String,String>> readXlsx2Map(MultipartFile multipartFile, int colCount){
         File tmpFile = new File(SYSTEM_TMP_DIR);
         if(!tmpFile.exists()){
@@ -54,6 +60,11 @@ public class ExcelReadUtil {
         return null;
     }
 
+     /***
+      * 读取Excel并转换为Map数据（本地文件形式）
+      * @param file 本地文件
+      * @param colCount 读取最大列
+      */
     public static List<Map<String,String>> readXlsx2Map(File file, int colCount) {
         List<Map<String,String>> varList = new ArrayList<>();
         try(FileInputStream fi = new FileInputStream(file);
